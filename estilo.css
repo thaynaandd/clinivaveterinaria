@@ -1,0 +1,128 @@
+* {margin: 0; padding:0;*
+
+}
+body {}
+
+section {
+	display: grid; 
+	grid-template-columns: 1fr 3fr 1fr; 
+	grid-template-rows: 7vh 26hv 60vh 7vh;
+	grid-template-areas:"nt nt nt" 
+						"c c c" 
+						"m p a" 
+						"r r r"
+}
+
+#nav-topo {
+	background-color: #006790;
+	color: #FFF;
+	grid-area: nt;
+}	
+
+ul {	
+	height:100% ;
+	display: flex;
+	justify-content: flex-end;
+
+}
+
+li{
+	list-style-type: none;
+	margin: 15px;
+}					
+
+header {
+	background-color: pink;
+	/*grid-column: 1/4;*/
+	grid-area: c;
+	background-image: url("img/banner.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    min-height: 50vh;  
+
+}
+
+nav {
+	background-color: blue;
+	/*grid-column: 1/2;*/
+	grid-area: m;
+
+}
+
+
+main {
+	background-color: green;
+	/*grid-column: 2/3;*/
+	grid-area: p;
+	display: flex;
+	flex-wrap: wrap;
+	margin-top: 60px
+	
+
+}
+
+div{
+	width: 190px;
+	height: 190px;
+	border: 1px solid #c4c4c4;
+	background-color: #F5F3F3;
+	margin: 20px;
+}
+
+aside {
+	background-color: yellow ;
+	/*grid-column: 3/4;*/
+	grid-area: a;
+	margin-top: 40px
+
+}
+
+
+footer {
+	background-color: #212121;
+	/*grid-column: 1/4;*/
+	grid-area: r;
+	padding: 20px;
+
+	}
+
+footer p{
+	text-align: center;
+}
+
+footer a{
+	color: #000;
+}
+
+foote a:hover {
+	color: #193363;
+
+/*MOBILE*/
+@media screen and (max-width: 300px) {
+	nav, main, aside{
+		width: 100%;
+	}
+	nav {
+		height: 60px;
+	}
+	ul {
+		display: flex;
+		justify-content: space-between;	
+	}
+	main {
+		font-size: 1.2em;
+	}
+
+	aside{
+		height: 170px;
+		display: flex;
+		font-size: 1.2em;
+	}
+
+}
+
+
+
+
+
