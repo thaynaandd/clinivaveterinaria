@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Clínica Veterinária Vida Animal</title>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" type="text/css" href="estilos.css" />
+        <meta name="author" content="Thayna Andrade" />
+        <meta name="veterinaria" content="veterinaria, clinica, petshop, ajuda, clinica 24horas" />
+        <meta name="description" content="Atendimento veterinario vinte e quatro horas" />
+    </head>
+
+<body>  <!-- ADICIONADO AQUI -->
+
+    <body>
+
+<section>
+    <nav id="nav-menu">
+        <ul id="ul-menu">
+            <li class="li-menu"><a href="#pag-home">HOME</a></li>
+            <li class="li-menu"><a href="#pag-especialidades">ESPECIALIDADES</a></li>
+            <li class="li-menu"><a href="#pag-exames">EXAMES</a></li>
+            <li class="li-menu"><a href="#pag-espaco">CONHEÇA NOSSO ESPAÇO</a></li>
+            <li class="li-menu"><a href="agendamentos.html">AGENDAMENTO</a></li>
+        </ul>
+    </nav>
+</section>
+
+
+
+    <header>
+        <img src="img/banner.png" alt="banner azul com o nome da clinica e um cachorro da raça beagle lateralmente" width="100%" height="300" />
+    </header>
+
+    <hr id="pag-home"/>
+
+    <font face="Kaushan Script" size="5" color="#193363">
+       <h1 align="center">Agendamentos</h1>
+    </font>
+
+    <font face="Roboto" size="4" color="#617287">
+        <p align="justify">Realize seu agendamento:</p>
+
+        <form name="" method="" action="">
+            <label for="nome">Nome do tutor:</label>
+            <input id="nome" type="text" name="nome_completo" size="60" placeholder="Digite seu nome completo" required autofocus /> <br/>
+
+            <label for="Telefone">Telefone para contato:</label> 
+            <input id="telefone" type="telefone" name="telefone" size="60" placeholder="(99) 99999-9999" pattern="^(?\d{2}/d{5}[-\s]\{4}.*?$" />
+
+            <label for="email">E-mail:</label> <br/>
+            <input id="email" type="email" name="email" size="60" placeholder="nomedeusuario@gmail.com" /> 
+
+            <label for="nome_pet">Nome do PET:</label>
+            <input id="nome_pet" type="nome_pet" name="nome_pet" size="60" placeholder="Nome do seu pet" /> 
+
+            <p><input type="submit" name="bnt-agendar" />
+            <input type="reset" name="bnt-cancelar" /></p>
+
+            <label for="especie">Espécie</label>
+            <input type="radio" id="cao" name="especie" value="Cão">
+            <label for="cao">Cão</label>
+
+            <input type="radio" id="gato" name="especie" value="Gato">
+            <label for="gato">Gato</label>
+
+            <input type="radio" id="outro" name="especie" value="Outro">
+            <label for="outro">Outro:</label>
+            <input type="text" id="especie_outro" name="especie_outro" placeholder="Informe a espécie">
+            <br><br>
+
+            <label for="raca">Raça</label>
+            <input type="text" id="raca" name="raca" placeholder="Raça" size="60"><br/>
+            <br/>
+
+            <fieldset>
+                <legend>Tipo de atendimento</legend>
+                <input id="clinico" type="checkbox" name="especialidade" value="clinico" /> <label form="clinico">Clínico Geral</label><br/>
+                <input id="dermato" type="checkbox" name="especialidade" value="dermato" /> <label fomr="dermato">Dermatologista</label><br/>
+                <input id="oftalmo" type="checkbox" name="especialidade" value="oftalmo" /> <label form="Oftalmo">Oftalmologista</label><br/>
+                <input id="nefro" type="checkbox" name="especialidade"/ value="nefro"> <label form="Nefro">Nefrologista</label>
+                <input id="cardio" type="checkbox" name="especialidade" value="cardio" /> <label form="Cardio">Cardiologista</label><br/>
+                <input id="odonto" type="checkbox" name="especialidade" value="odonto" /> <label form="Odonto">Odontologia</label><br/>
+                <input id="vacina" type="checkbox" name="especialidade" value="vacina" /> <label form="vacina">Vacinação</label><br/>
+            </fieldset>
+
+            <label for="horario">Horário</label>
+            <input type="radio" id="manhã" name="turno" value="manhã">
+            <label for="manhã">Matutino</label>
+
+            <input type="radio" id="tarde" name="turno" value="tarde">
+            <label for="tarde">Vespertino</label>
+
+            <input type="radio" id="noturno" name="turno" value="noturno">
+            <label for="nortuno">Noturno</label>
+
+            <label form="msg">Observações</label>
+            <textarea id="msg" cols="80" rows="5"></textarea>
+
+        </form>
+
+        <footer>
+            <p> Desenvolvido por <a href="https://www.instagram.com/thaynaandd/" target="_blank">Thayná Andrade</a> - 2025</p>
+        </footer>
+
+    </font>
+
+</body>
+</html>
