@@ -1,35 +1,128 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
 <head>
-	<title>Clinica Veterinaria Vida Animal</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+    <meta charset="UTF-8">
+    <title>Clínica Veterinária Vida Animal</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="estilo.css">
 </head>
 
-   	
 <body>
-	<section>
-		<nav id="nav-topo">
-			<ul>
-				<li>HOME</li>
-				<li>ESPECIALIDADES</li>
-				<li>EXAMES</li>
-				<li>AGENDAMENTO</li>
-			</ul>
-		</nav>
-		<header></header>
-		<main>
-			<div>1</div>
-			<div>2</div>
-			<div>3</div>
-			<div>4</div>
-			<div>5</div>
-			<div>6</div>
-		</main>
-		<aside></aside>
-		<footer>
-			<p> Desenvolvido por <a href="https://www.instagram.com/thaynaandd/" target="_blank">Thayná Andrade</a> - 2025</p>
-		</footer>
-	</section>
-</body>
+
+    <!-- MENU SUPERIOR -->
+    <nav id="nav-menu">
+        <ul id="ul-menu">
+            <li><a class="a-menu" href="#pag-home">HOME</a></li>
+            <li><a class="a-menu" href="#pag-especialidades">ESPECIALIDADES</a></li>
+            <li><a class="a-menu" href="#pag-exames">EXAMES</a></li>
+            <li><a class="a-menu" href="#pag-espaco">CONHEÇA NOSSO ESPAÇO</a></li>
+            <li><a class="a-menu" href="agendamentos.html">AGENDAMENTO</a></li>
+        </ul>
+    </nav>
+
+    <!-- CABEÇALHO -->
+    <header id="pag-home"></header>
+
+    <!-- APRESENTAÇÃO -->
+    <article>
+        <h1>Clínica Vida Animal</h1>
+        <p>Há mais de 10 anos no mercado, a Vida Animal é referência em atendimento veterinário de excelência, unindo carinho, profissionalismo e inovação no cuidado com os animais. Reconhecida e premiada por sua qualidade em prestação de serviços, nossa missão é promover saúde, bem-estar e qualidade de vida para os pets e tranquilidade para seus tutores.</p>
+        <p>Investimos constantemente em tecnologia de ponta e atualização profissional, oferecendo estrutura moderna para diagnósticos rápidos e precisos. Contamos com uma equipe multidisciplinar de veterinários especializados, preparados para atuar em diversas áreas da medicina veterinária.</p>
+    </article>
+
+    <section id="pag-especialidades">
+        <h2>Especialidades</h2>
+        <p>Entre nossas especialidades estão:</p>
+
+        <ul id="ul-especialidades">
+            <li>Clínica Geral</li>
+            <li>Dermatologia</li>
+            <li>Cardiologia</li>
+            <li>Odontologia</li>
+            <li>Fisioterapia</li>
+            <li>Ortopedia</li>
+            <li>Cirurgia geral e especializada</li>
+        </ul>
+    </section>
+
+    
+    <section id="pag-exames">
+
+        <h2>Exames</h2>
+        <p>Realizamos diversos exames e diagnósticos com equipamentos modernos:</p>
+
+        <div id="container">
+
+            <div class="card">
+                <img src="img/ultra.png">
+                <div class="card-content">
+                    <h3>Ultrassonografia</h3>
+                    <p>Avaliação detalhada de órgãos internos, ideal para gestação e doenças crônica.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/raio x.png">
+                <div class="card-content">
+                    <h3>Raio-X Digital</h3>
+                    <p>Imagens nítidas e de alta resolução para identificar fraturas, alterações ósseas, pulmonares e digestivas.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/hemograma.png">
+                <div class="card-content">
+                    <h3>Exames Laboratoriais</h3>
+                    <p>Hemograma, bioquímicos, urinálise e outros testes para monitorar a saúde geral do pet.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <img src="img/eletro.png">
+                <div class="card-content">
+                    <h3>Eletrocardiograma</h3>
+                    <p>Avaliação da função cardíaca, essencial para pets idosos ou com suspeita de problemas cardíacos.</p>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    
+    <section id="pag-espaco">
+
+        <h2>Conheça nosso espaço</h2>
+
+        <div id="container-espaco">
+            <div class="coluna-espaco">
+                <p>Antes mesmo de agendar a consulta, você já pode conhecer nossa clínica por dentro. Preparamos este tour especial para mostrar a você cada detalhe do nosso espaço, da recepção acolhedora às salas de atendimento equipadas com tecnologia de ponta.</p>
+            </div>
+        </div>
+
+
+        <div class="coluna-espaco">
+            <video width="300" controls preload="auto">
+                <source src="https://drive.google.com/uc?export=download&id=1ZWFaJsKtUH2pljP3Z8x9gqDWuPTTlE-A" type="video/mp4">
+                Seu navegador não suporta vídeo.
+            </video>
+        </div>
+
+        <div class="container-imagens">
+            <img class="img-icones" src="img/insta.jpg">
+            <p>@clinicavidaanimal</p>
+
+            <img class="img-icones" src="img/email.jpg">
+            <p>vidaanimal@gmail.com</p>
+        </div>
+
+        
+
+    </section>
+
+    <footer>
+        <hr/>
+            <p> Desenvolvido por <a href="https://www.instagram.com/thaynaandd/" target="_blank">Thayná Andrade</a> - 2025</p>
+        </footer>
+
+
 </html>-
